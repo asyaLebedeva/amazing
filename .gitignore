@@ -4,13 +4,11 @@
 
 # Untracked Files #
 ###################
-gulpfile.js
 package.json
 package-lock.json
 *.md
 
 #folders
-dist/
 fonts/
 node_modules/
 src/
