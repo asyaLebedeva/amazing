@@ -35,7 +35,7 @@ const styles = () => {
     level: 2,
     compatibility: 'ie9'
   }))
-  .pipe(dest('dist'))
+  .pipe(dest('./dist/css/'))
   .pipe(browSync.stream())
 }
 
@@ -52,9 +52,16 @@ const img = () => {
   .pipe(dest('./dist/img/svg'))
 }
 
+const optimize = () => {
+  return src('src/img/**/*.png')
+  .pipe(image())
+  .pipe(dest('./dist/img/'))
+  .pipe(browSync.stream())
+}
+
 
 exports.scripts = scripts
 exports.htmlmin = htmlmin
 exports.styles = styles
 exports.img = img
-exports.default = series(htmlmin, scripts, styles, browser)
+exports.default = series(htmlmin, styles, scripts, browser)
