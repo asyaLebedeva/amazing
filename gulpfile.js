@@ -30,7 +30,7 @@ const styles = () => {
   .pipe(autoprefix({
     cascade: false
   }))
-  .pipe(styleConcat('style.css'))
+  .pipe(styleConcat('style.css', 'bootstrap-grid.min.css'))
   .pipe(cssminify({
     level: 2,
     compatibility: 'ie9'
