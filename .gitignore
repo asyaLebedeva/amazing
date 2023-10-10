@@ -9,8 +9,5 @@ package-lock.json
 *.md
 
 #folders
-fonts/
-node_modules/
-src/
-
-
+app/
+node_modules
