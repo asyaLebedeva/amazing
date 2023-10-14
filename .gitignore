@@ -7,7 +7,8 @@
 package.json
 package-lock.json
 *.md
+src/js/script.js
+
 
 #folders
-app/
 node_modules
