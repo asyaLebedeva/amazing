@@ -5,32 +5,24 @@
     max-width: 1720px;
   }
 
-/*  .enter .aside {
-    left: 0rem;
-  }
-
-  .enter .nav {
-    right: 3rem;
-  } */
-
   a.nav__link {
     padding: 20px;
   }
 
   .nav__item:first-child .nav__link {
-    padding-top: 0;
+    padding-top: 15px;
   }
 
   .nav__item:last-child .nav__link {
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
 
   .enter .container {
     z-index: 5;
   }
 
-  .section-one div.col-5,
-  .section-three div.col-5 {
+  .section-one div.col-after,
+  .section-three div.col-after {
     padding-left: 2rem;
     max-width: 40%;
   }
