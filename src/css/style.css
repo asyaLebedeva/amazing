@@ -380,6 +380,10 @@ h1, h3 {
 
 .footer__title {
   margin-bottom: 30px;
+  font-weight: 400;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
   color:#FBD784;
 }
 
@@ -405,6 +409,14 @@ h1, h3 {
   display: flex;
   width: 40%;
   justify-content: space-between;
+}
+
+.footer__link {
+  font-weight: 500;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  line-height: 200%;
+  color: #fff;
 }
 
 .footer .row .col-list {
