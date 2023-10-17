@@ -150,7 +150,7 @@
 
   body {
     background-image: url('../img/media/768-HG.png'), url('../img/media/768-MG.png'), url('../img/media/768-VG.png') !important;
-    background-position: top 0 center, top 185px center, top 29rem center !important;
+    background-position: top 0 center, top 20rem center, top 37.6rem center !important;
   }
 
   header.header {
@@ -158,13 +158,11 @@
   }
 
   div.linear-1 {
-    width: 59rem;
     height: 35rem;
   }
   
   div.linear-2 {
-    top: 30rem;
-    width: 59rem;
+    top: 37rem;
     height: 22rem;
   }
 
@@ -303,6 +301,11 @@
     margin-bottom: 20px;
   }
 
+  h2.section__title::before {
+    left: 20px;
+    width: 50px;
+  }
+
   h2.section__title, h3.section__title-sub {
     max-width: inherit;
   }
@@ -399,6 +402,13 @@
     font-size: 15px;
     line-height: 100%;
   }
+
+  h2.section__title, h3.section__title-sub {    
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 2px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -410,12 +420,30 @@
     max-width: 400px;
   }
 
+  body {
+    background-image: url('../img/media/400-HG.png'), url('../img/media/400-MG.png'), url('../img/media/400-VG.png') !important;
+    background-position: top 0 center, top 175px center, top 20rem center !important;
+  }
+
+  div.linear-1 {
+    height: 35rem;
+  }
+  
+  div.linear-2 {
+    top: 15rem;
+    height: 22rem;
+  }
+
+  .enter div.container {
+    min-height: 10rem;
+  }
+
   div.enter__aside {
-    left: 0;
+    left: 10px;
   }
 
   nav.nav {
-    right: 15px;
+    right: 10px;
   }
 
   div.header__menu {
@@ -425,12 +453,46 @@
   .section-one div.col-after, .section-two div.col-5.col-after , .section-three div.col-after {
     padding-left: 0;
   }
+
+  .col-list.col-3:first-of-type {
+    margin-right: 2rem;
+  }
 }
 
 @media (max-width: 320px) {
   body,
   .linear-1,
-  .linear-2 {
+  .linear-2,
+  main.main,
+  footer.footer {
     max-width: 320px;
+  }
+
+  picture.header__picture {
+    margin-right: 10px;
+  }
+
+  button.header__btn {
+    padding-left: 25px;
+  }
+
+  p.section__sub,
+  .section-two .section__sub,
+  p.footer__descr {
+    width: 225px;
+    max-width: 225px;
+  }
+
+  div.footer__lists {
+    flex-direction: column;
+  }
+
+  h3.footer__title,
+  li.footer__contacts:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  div.header__menu {
+    left: 10px;
   }
 }
