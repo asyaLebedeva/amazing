@@ -36,13 +36,6 @@ function checkMediaQuery() {
 checkMediaQuery();
 $(window).on('resize', checkMediaQuery);
 
-if(window.matchMedia("(max-width: 712px)").matches) {
-  $('.header__menu').css({'position' : 'absolute', 'top' : '50px', 'left' : '135px'});
-  $('.col-img').addClass('align-self-end');
-}
-checkMediaQuery();
-$(window).on('resize', checkMediaQuery);
-
 let sections = $('section')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
