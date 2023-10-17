@@ -22,6 +22,16 @@ function checkMediaQuery() {
       }
     });
   }
+
+  if(window.matchMedia("(max-width: 1200px)").matches) {
+    $(document).ready(function() {
+      $('.footer').on('mouseenter', function() {
+        $('.menu-trigger').css('display', 'none');
+      }).on('mouseleave', function() {
+        $('.menu-trigger').css('display', 'block');
+      });
+    });
+  }
 }
 checkMediaQuery();
 $(window).on('resize', checkMediaQuery);
