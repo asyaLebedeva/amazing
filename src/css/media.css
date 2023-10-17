@@ -144,6 +144,64 @@
   .linear-2 {
     max-width: 712px;
   }
+
+  .header .container {
+    max-width: 712px;
+    min-height: 100px;
+  }
+
+  .header__picture {
+    width: 108px;
+  }
+
+  div.header__menu {
+    width: fit-content;
+  }
+
+  p.start__sub {
+    max-width: 70%;
+  }
+
+  .section-one .col-5.col-after::after, .section-three .col-5.col-after::after {
+    transform: scale(0.5) translateX(-60%);
+  }
+
+  .section-two .col-5.col-after::after {
+    transform: scale(0.5) translateX(-10%);
+  }
+
+  h2.section__title,
+  h3.section__title-sub {
+    margin-bottom: 15px;
+  }
+
+  h3.section__title-sub { 
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  p.section__sub,
+  p.footer__descr {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .col-5.footer-section-col-5 {
+    margin-right: 30px;
+  }
+
+  div.footer__lists {
+    margin-left: 0;
+  }
+
+  nav.nav {
+    right: 15px;
+  }
+
+  div.enter__aside {
+    left: 10px;
+  }
 }
 
 @media (max-width: 600px) {
