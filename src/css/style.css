@@ -147,8 +147,11 @@ main,
   padding: 0 80px;
 }
 
-.header__link {
+.header__item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header__link {
   min-height: 25px;
   font-size: 18px;
   font-family: 'Gilroy', sans-serif;
@@ -229,8 +232,11 @@ main,
 
 .nav__link {
   padding: 30px;
+  font-weight: 700;
+  font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   line-height: 22px;
+  color: #fff;
 }
 
 .enter__content {
