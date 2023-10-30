@@ -391,6 +391,25 @@
   div.linear-2 {
     width: 576px;
   }
+
+  p.enter-aside__title {
+    font-size: 15px;
+    line-height: 100%;
+  }
+
+  ul.enter-aside__list {
+    padding-top: 13px;
+  }
+
+  nav.nav {
+    width: 77px;
+  }
+
+  a.nav__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -435,21 +454,6 @@
 
   div.enter__scroll {
     justify-content: center;
-  }
-
-  p.enter-aside__title {
-    font-size: 15px;
-    line-height: 100%;
-  }
-
-  ul.enter-aside__list {
-    padding-top: 13px;
-  }
-
-  a.nav__link {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 100%;
   }
 
   h2.section__title, h3.section__title-sub {    
