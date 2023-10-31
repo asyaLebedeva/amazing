@@ -49,6 +49,7 @@ function checkMediaQuery() {
 checkMediaQuery();
 $(window).on('resize', checkMediaQuery);
 
+
 let sections = $('section')
   , nav = $('nav')
   , nav_height = nav.outerHeight();
