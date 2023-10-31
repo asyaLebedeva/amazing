@@ -156,7 +156,7 @@
   }
 
   body {
-    background-image: url('../img/media/768-HG.png'), url('../img/media/768-MG.png'), url('../img/media/768-VG.png') !important;
+    background-image: url('assets/images/media/768-HG.png'), url('assets/images/media/768-MG.png'), url('assets/images/media/768-VG.png') url('') !important;
     background-position: top 0 center, top 20rem center, top 37.6rem center !important;
   }
 
@@ -477,7 +477,7 @@
   }
 
   body {
-    background-image: url('../img/media/400-HG.png'), url('../img/media/400-MG.png'), url('../img/media/400-VG.png') !important;
+    background-image: url('assets/images/media/400-HG.png'), url('assets/images/media/400-MG.png'), url('assets/images/media/400-VG.png') !important;
     background-position: top 0 center, top 175px center, top 20rem center !important;
   }
 
