@@ -130,6 +130,12 @@ main,
   line-height: 100px;
 }
 
+@media (min-width: 1200px) and (max-width: 1440px) {
+  p.start-sub {
+    padding-left: 60px;
+  }
+}
+
 .section__title-sub {
   font-family: 'Playfair Display', serif;
   font-weight: 400;
