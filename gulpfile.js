@@ -13,6 +13,7 @@ const mode = require('gulp-mode')()
 const webpack = require('webpack-stream')
 const del = require('del')
 const csso = require('gulp-csso')
+const debug = require('gulp-debug')
 const browserSync = require('browser-sync').create()
 
 const clean = () => {
@@ -57,7 +58,7 @@ const js = () => {
 }
 
 const repeatImg = () => {
-  return src('src/assets/img/**/**/**/*.{webp, svg, png}')
+  return src('src/assets/img/**/**/*')
     .pipe(dest('dist/assets/images'));
 }
 
@@ -75,12 +76,17 @@ const watchForChanges = () => {
   watch('./src/css/**/*.scss', css);
   watch('.src/**/*.js', js);
   watch('./**/*.html').on('change', browserSync.reload);
-  watch('src/assets/img/**/**/**/*.{webp, svg, png}',
+  watch('src/assets/img/**/**/*',
   series(cleanImages, repeatImg))
-  watch('src/assets/fonts/**/*.{woff2, woff}',
+  watch('src/assets/fonts/**/*',
   series(cleanFonts, repeatFonts));
 }
 
 exports.default = series(clean, parallel(css, js, repeatImg, repeatFonts), watchForChanges);
 exports.build = series(clean, parallel(css, js, repeatImg, repeatFonts))
+exports.debug = () => {
+  return src('src/assets/img/**/**/*')
+    .pipe(mode.development(debug({title: 'test_name'})))
+    .pipe(dest('dist/bugs-2'))
+};
 
