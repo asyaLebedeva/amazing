@@ -1,18 +1,14 @@
 const { src, dest, watch, parallel, series } = require('gulp')
-const htmlmin = require('gulp-htmlmin')
 const sass = require('gulp-dart-sass')
-const concat = require('gulp-concat')
-const cssMin = require('gulp-csso') /* min css */
+const cssMin = require('gulp-csso')
 const rename = require('gulp-rename')
 const autoprefixer = require('gulp-autoprefixer')
-const imgcompress = require('compress-images')
 const babel = require('gulp-babel')
-const terser = require('gulp-terser') /* min js instead gulp-uglify */
+const terser = require('gulp-terser')
 const sourcemap = require('gulp-sourcemaps')
 const mode = require('gulp-mode')()
 const webpack = require('webpack-stream')
 const del = require('del')
-const csso = require('gulp-csso')
 const debug = require('gulp-debug')
 const browserSync = require('browser-sync').create()
 
@@ -71,7 +67,9 @@ const watchForChanges = () => {
   browserSync.init({
     server: {
       baseDir: './'
-    }
+    },
+    online: true, 
+    loglevel: 'debug'
   });
   watch('./src/css/**/*.scss', css);
   watch('.src/**/*.js', js);
