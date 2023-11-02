@@ -1,5 +1,5 @@
 @media (max-width: 1720px) {
-  body {
+  body.body {
     max-width: 1720px;
   }
 
@@ -36,7 +36,7 @@
 }
 
 @media (max-width: 1520px) {
-  body {
+  body.body {
     max-width: 1520px;
   }
 
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 1290px) and (max-width: 1440px) {
-  body {
+  body.body {
     max-width: 1440px;
   }
 
@@ -58,7 +58,7 @@
 }
 
 @media (max-width: 1280px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 1280px;
@@ -71,7 +71,7 @@
 }
 
 @media (max-width: 1200px) {
-  body,
+  body.body,
     main.main,
     footer.footer {
       max-width: 1200px;
@@ -92,7 +92,7 @@
 }
 
 @media (max-width: 1024px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 1024px;
@@ -124,7 +124,7 @@
 }
 
 @media (max-width: 992px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 992px;
@@ -149,15 +149,15 @@
 }
 
 @media (max-width: 768px) {
-  body,
+  body.body {
+    max-width: 768px;
+    background-image: url('assets/images/media/768-HG.png'), url('assets/images/media/768-MG.png'), url('assets/images/media/768-VG.png') !important;
+    background-position: top 0 center, top 20rem center, top 37.6rem center !important;
+  }
+  
   main.main,
   footer.footer {
     max-width: 768px;
-  }
-
-  body {
-    background-image: url('assets/images/media/768-HG.png'), url('assets/images/media/768-MG.png'), url('assets/images/media/768-VG.png') !important;
-    background-position: top 0 center, top 20rem center, top 37.6rem center !important;
   }
 
   div.linear-1,
@@ -206,7 +206,7 @@
 }
 
 @media (max-width: 712px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 712px;
@@ -290,7 +290,7 @@
 }
 
 @media (max-width: 600px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 600px;
@@ -381,7 +381,7 @@
 }
 
 @media (max-width: 576px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 576px;
@@ -413,7 +413,7 @@
 }
 
 @media (max-width: 480px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 480px;
@@ -465,7 +465,12 @@
 }
 
 @media (max-width: 400px) {
-  body,
+  body.body {
+    max-width: 400px;
+    background-image: url('assets/images/media/400-HG.png'), url('assets/images/media/400-MG.png'), url('assets/images/media/400-VG.png') !important;
+    background-position: top 0 center, top 175px center, top 20rem center !important;
+  }
+
   main.main,
   footer.footer {
     max-width: 400px;
@@ -474,11 +479,6 @@
   div.linear-1,
   div.linear-2 {
     width: 400px;
-  }
-
-  body {
-    background-image: url('assets/images/media/400-HG.png'), url('assets/images/media/400-MG.png'), url('assets/images/media/400-VG.png') !important;
-    background-position: top 0 center, top 175px center, top 20rem center !important;
   }
 
   div.linear-1 {
@@ -515,8 +515,22 @@
   }
 }
 
+@media (min-width: 321px) and (max-width: 399px) {
+  body.body,
+  main.main,
+  footer.footer {
+    max-width: 399px;
+    min-width: 321px;
+  }
+
+  div.linear-1,
+  div.linear-2 {
+    width: 370px;
+  }
+}
+
 @media (max-width: 320px) {
-  body,
+  body.body,
   main.main,
   footer.footer {
     max-width: 320px;
