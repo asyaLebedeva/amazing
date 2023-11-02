@@ -20,7 +20,7 @@ section {
   position: absolute;
   top: -60px;
   left: 0;
-  width: /*120rem*/ 100%;
+  width: 100%;
   height: 87rem;
   background: linear-gradient(330.24deg, rgba(11, 29, 38, 0) 31.06%, #0B1D26 108.93%);
 }
@@ -29,7 +29,7 @@ section {
   position: absolute;
   top: 100rem;
   left: 0;
-  width: /*120rem*/ 100%;
+  width: 100%;
   height: 44rem;
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
@@ -82,6 +82,7 @@ main,
   font-weight: 400;
   font-size: 64px;
   line-height: 77px;
+  text-wrap: wrap;
 }
 
 .header {
@@ -245,7 +246,7 @@ h1, h3 {
 
 .col-img {
   margin: 0;
-  width: 45%;
+  width: 39%;
 }
 
 .section-one .col-img .section__right-img {
@@ -268,7 +269,7 @@ h1, h3 {
 .section-three .col-after::after  {
   content: "01";
   position: absolute;
-  top: -70px;
+  top: 0px;
   left: 0px;
   width: 240px;
   height: 240px;
@@ -320,7 +321,7 @@ h1, h3 {
 
 .section__sub {
   font-family: 'Gilroy', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 32px;
   color: #fff;
@@ -350,7 +351,7 @@ h1, h3 {
 
 .footer__descr {
   padding-top: 24px;
-  max-width: 303px;
+  width: 303px;
   font-family: 'Gilroy', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -364,7 +365,7 @@ h1, h3 {
 .footer__lists {
   margin-left: auto;
   display: flex;
-  width: 40%;
+  max-width: 40%;
 }
 
 .footer__link {
