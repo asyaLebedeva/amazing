@@ -34,7 +34,7 @@
       <section class="section section-aside">
         <div class="container container-sm container-md container-lg container-xl custom">
           <div class="aside">
-            <button class="aside__btn btn__hidden" id="touch__button" aria-label="touch button to see links for follows"><img src="dist/assets/images/touch.png" alt="touch button" width="32" height="32"></button>
+            <button class="aside__btn btn__hidden" id="touch__button" aria-label="touch button to see links for follows"><svg fill="none" height="30" viewBox="0 0 48 48" width="30" xmlns="http://www.w3.org/2000/svg"><g stroke="#fff" stroke-linecap="round" stroke-width="3"><path d="m12.5658 26.1826c-1.7105 1.1718-2.5658 3.111-2.5658 5.8177 0 4.0601 4.9753 11 9.4618 11h11.4797c4.3913 0 7.0585-3.8506 7.0585-6.9399 0-4.3503 0-8.7007 0-13.051 0-1.6568-1.3431-3-3-3h-.0091c-1.6518 0-2.9909 1.3391-2.9909 2.9909"/><path d="m13.9812 28.4453v-20.4393c0-1.65551 1.3421-2.99756 2.9976-2.99756.0027 0 .0055 0 .0083.00001 1.6614.0046 3.0058 1.35274 3.0058 3.01418v15.56947"/><path d="m19.9929 23.0085v-3.9929c0-1.6654 1.3501-3.0155 3.0155-3.0155s3.0155 1.3501 3.0155 3.0155v3.9929" stroke-linejoin="round"/><path d="m26 22.7159v-2.7123c0-1.6569 1.3431-3 3-3s3 1.3431 3 3v3" stroke-linejoin="round"/></g></svg></button>
             <ul class="aside__list aside__follow aside__hidden" id="follow">
               <li class="aside__title aside__item">Follow us</li>
               <li class="aside__item"><a class="aside__link" href="https://www.twitter.com/" target="_blank"><i class="aside__icon aside__twitter">
@@ -189,6 +189,12 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="dist/app.js"></script>
+    <script>
+      function upFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
   </body>
 </html>
 <!-- https://www.figma.com/file/hMVtKRVHUxyY03knIrHkgG/MNTN---Landing-Page?type=design&node-id=1-2&mode=design -->
