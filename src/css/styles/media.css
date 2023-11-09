@@ -252,6 +252,10 @@
 }
 
 @media (max-width: 600px) {
+  body.body {
+    padding: 0 20px;
+  }
+
   body.body,
   main.main,
   footer.footer {
@@ -260,10 +264,6 @@
 
   ul.aside__list {
     left: 2rem;
-  }
-
-  nav.nav {
-    right: 1rem;
   }
 
   .nav__start.nav__link {
@@ -291,11 +291,13 @@
   }
 
   nav.nav {
+    right: 17px;
     width: 50px;
   }
 
   section.section-aside {
-    min-height: 30rem;
+    margin-top: 0 !important;
+    min-height: 5rem;
   }
 
   .aside__hidden {
@@ -304,15 +306,14 @@
 
   button.aside__btn {
     display: block;
-    left: 1.5rem;
+    left: 0;
     top: 200px;
-    width: 40px;
-    height: 40px;
     cursor: pointer;
-    outline: 2px solid #fff;
-    outline-offset: 5px;
-    border-radius: 50%;
-    animation: border-neon 5s linear infinite;
+    z-index: 2;
+  }
+
+  button.aside__btn svg path {
+    animation: touch-neon 5s linear infinite;
   }
 
   .aside__insta svg path {
@@ -343,7 +344,7 @@
   }
 
   header.header {
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
   }
 
   div.header__menu {
@@ -369,6 +370,15 @@
     width: 90%;
   }
 
+  .section-one div.col-img,
+  .section-three div.col-img {
+    transform: translateX(-13px);
+  }
+
+  .section-two div.col-img {
+    transform: translateX(-24px);
+  }
+
   .section__source {
     margin-bottom: 20px;
   }
@@ -382,13 +392,13 @@
   }
 
   .section-two div.col-5.col-after {
-    padding-left: 2rem;
+    padding-left: 15px !important;
     max-width: 100%;
     width: 100%;
   }
 
   .section-two div.col-after::after {
-    left: -4rem;
+    left: -55px;
   }
 
   .footer .col-5 {
@@ -503,10 +513,6 @@
     left: 10px;
   }
 
-  nav.nav {
-    right: 10px;
-  }
-
   div.header__menu {
     left: 50px;
   }
@@ -527,10 +533,6 @@
     max-width: 380px;
     min-width: 321px;
   }
-
- /* nav.nav {
-    right: 10px;
-  }*/
 
   div.custom {
     position: relative;
@@ -586,5 +588,13 @@
 
   div.header__menu {
     left: 10px;
+  }
+
+  h1.enter-content__title.section__title {
+    font-weight: 400;
+  }
+
+  section.section {
+    margin-bottom: 10rem;
   }
 }
