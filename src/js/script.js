@@ -13,11 +13,6 @@ function toggleBtn() {
 }
 toggleBtn()
 
-function upFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 $(document).ready(function() {
   $('.footer').on('mouseenter', function() {
     $('.menu-trigger, .aside__list').css('display', 'none');
