@@ -58,11 +58,6 @@ const repeatImg = () => {
     .pipe(dest('dist/assets/images'));
 }
 
-const repeatFonts = () => {
-  return src('src/assets/fonts/**/*.{woff2, woff}')
-    .pipe(dest('dist/assets/fonts'))
-}
-
 const watchForChanges = () => {
   browserSync.init({
     server: {
@@ -75,13 +70,11 @@ const watchForChanges = () => {
   watch('.src/**/*.js', js);
   watch('./**/*.html').on('change', browserSync.reload);
   watch('src/assets/img/**/**/*',
-  series(cleanImages, repeatImg))
-  watch('src/assets/fonts/**/*',
-  series(cleanFonts, repeatFonts));
+  series(cleanImages, repeatImg));
 }
 
-exports.default = series(clean, parallel(css, js, repeatImg, repeatFonts), watchForChanges);
-exports.build = series(clean, parallel(css, js, repeatImg, repeatFonts))
+exports.default = series(clean, parallel(css, js, repeatImg), watchForChanges);
+exports.build = series(clean, parallel(css, js, repeatImg))
 exports.debug = () => {
   return src('src/assets/img/**/**/*')
     .pipe(mode.development(debug({title: 'test_name'})))
