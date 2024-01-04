@@ -1,4 +1,5 @@
-function toggleBtn() {
+(function() {
+  function toggleBtn() {
   const tglBtn = document.getElementById('touch__button')
   const socMedia = document.getElementById('follow')
   tglBtn.addEventListener('click', () => {
@@ -65,17 +66,17 @@ checkMediaQuery();
 $(window).on('resize', checkMediaQuery);
 
 let sections = $('section')
-  , nav = $('nav')
-  , nav_height = nav.outerHeight();
+  nav = $('nav')
+  navHeight = nav.outerHeight();
 
 $(window).on('scroll', function () {
-  let cur_pos = $(this).scrollTop();
+  let cursorPosition = $(this).scrollTop();
   
   sections.each(function() {
-    let top = $(this).offset().top - nav_height,
+    let top = $(this).offset().top - navHeight,
         bottom = top + $(this).outerHeight();
     
-    if (cur_pos >= top && cur_pos <= bottom) {
+    if (cursorPosition >= top && cursorPosition <= bottom) {
       nav.find('a').removeClass('active');
       sections.removeClass('active');
       
@@ -86,12 +87,12 @@ $(window).on('scroll', function () {
 });
 
 nav.find('a').on('click', function () {
-  let $el = $(this)
-    , id = $el.attr('href');
+  let el = $(this);
+  id = el.attr('href');
   
   $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height
+    scrollTop: $(id).offset().top - navHeight
   }, 500);
   
   return false;
-});
+});})();
